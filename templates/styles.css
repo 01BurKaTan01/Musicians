@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #252729; /* Koyu mavi arka plan */
+    color: #fff; /* Beyaz metin */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #34495e; /* Daha koyu mavi arka plan */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    font-size: 5em;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding: 50px 0 20px 0;
+    background-color: transparent; /* Make the h1 background transparent */
+    background-color: #fff; /* Set the background color to white */
+}
+
+h1::before {
+    content: "";
+    background-image: url('/static/note.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.2; /* Adjust to make the image more or less transparent */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+.group-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #252729; /* Daha koyu mavi arka plan */
+    padding: 20px;
+}
+
+
+.group-item {
+    display: flex; /* This will make the item a flex container */
+    align-items: center; /* This will vertically center the items */
+    justify-content: space-between; /* This will put space between the items */
+    flex: 0 0 40%; /* This will make each item take up 40% of the container's width */
+    max-width: 40%; /* This will make each item take up 40% of the container's width */
+    height: 200px; /* This will make each item have a fixed height of 200px, making the rectangles thicker */
+    margin: 3%; /* This will add a 3% margin around each item */
+    background-color: #252729; /* Koyu mavi arka plan */
+    box-shadow: 0 4px 8px #ea3521; /* Neon pembe gölge */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.group-item:hover {
+    transform: translateY(-40px);
+}
+
+.group-item img {
+    width: 45%;
+    height: auto;
+    border-bottom: 2px solid #e74c3c; /* Neon kırmızı */
+}
+
+.group-info {
+    width : 50%;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #ce2f1d; /* Neon yeşil */
+}
+
+a {
+    display: block;
+    text-align: center;
+    color: #000000; /* Neon kırmızı */
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+    font-weight: bold; /* Kalın yazı stilini belirtin */
+    font-size: 16px; /* İstenilen font boyutunu ayarlayın */
+}
+
+a:hover {
+    color: #d35400; /* Neon turuncu */
+}
+
+.buttons {
+    background-color: #d22626; /* Örnek bir renk */
+    border: none; /* Kenarlık olmadan */
+    color: #fff; /* Metin rengi beyaz */
+    padding: 0.5% 0.5%; /* Buton içi dolgusu */
+
+
+    text-align: center; /* Metni ortala */
+    text-decoration: none; /* Metin altı çizgisini kaldır */
+    display: inline-block; /* Butonun satırda görünmesi */
+    font-size: 16px; /* Metin boyutu */
+    border-radius: 5px; /* Köşe yuvarlaklığı */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+.buttons:hover {
+    background-color: #ea261f; /* Hover durumunda arka plan rengi değişimi */
+}

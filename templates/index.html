@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE MUSIC LEGENDS API</title>
+    <link rel="stylesheet" href="/templates/styles.css">
+</head>
+<body>
+    <h1>THE MUSIC LEGENDS API</h1>
+    <div class="group-container">
+        {{range .}}
+        <div class="group-item">
+            <img src="{{.Image}}" alt="{{.Name}} Image">
+            <div class="group-info">
+                <h2>{{.Name}}</h2>
+                <button class="buttons"><a href="/details?id={{.ID}}">Details</a></button>
+            </div>
+        </div>
+        {{end}}
+    </div>
+</body>
+</html>
+
