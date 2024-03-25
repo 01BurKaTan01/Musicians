@@ -14,11 +14,26 @@
             <img src="{{.Image}}" alt="{{.Name}} Image">
             <div class="group-info">
                 <h2>{{.Name}}</h2>
-                <button class="buttons"><a href="/details?id={{.ID}}">Details</a></button>
+                <div class="details">
+                    <p>ID: {{.ID}}</p>
+                    <p>Members:</p>
+                    <ul>
+                        {{range .Members}}
+                        <li>{{.}}</li>
+                        {{end}}
+                    </ul>
+                    <p>Creation Date: {{.CreationDate}}</p>
+                    <p>First Album: {{.FirstAlbum}}</p>
+                    <p>Date Locations:</p>
+                    <ul>
+                        {{range $key, $value := .DateLocations}}
+                        <li>{{$key}}: {{range $value}}{{.}}, {{end}}</li>
+                        {{end}}
+                    </ul>
+                </div>
             </div>
         </div>
         {{end}}
     </div>
 </body>
 </html>
-
