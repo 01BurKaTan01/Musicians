@@ -6,8 +6,53 @@
     <title>THE MUSIC LEGENDS API</title>
     <link rel="stylesheet" href="/templates/styles.css">
     <link rel="icon" type="image/png" href="../static/note.png">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        .header-section {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            padding: 0 30px; /* Keep horizontal padding for alignment */
+            box-sizing: border-box; /* Include padding in the element's total width */
+            background-color: #fff; /* Make the background completely white */
+        }
+        .header-button {
+            font-size: 24px; /* Increased font size for bigger text */
+            font-weight: 900; /* Increased font weight for thicker text */
+            padding: 15px 30px; /* Padding to increase the clickable area */
+            margin-left: 20px; /* Space between buttons */
+            background: none; /* No background color */
+            color: #000; /* Black text color */
+            border: 2px solid transparent; /* Transparent border for both buttons */
+            cursor: pointer; /* Cursor pointer on hover */
+            transition: all 0.3s; /* Smooth transition for background and color */
+        }
+        .header-button:first-of-type:hover {
+            color: #d35400; /* Orange text on hover for About button */
+            background-color: transparent; /* Keep background transparent on hover */
+        }
+        .header-button:last-of-type { /* Specifically target the SUPPORT US button for the border */
+            border-color: #d35400; /* Very thin orange line */
+        }
+        .header-button:last-of-type:hover {
+            background-color: #d35400; /* Orange background on hover for SUPPORT US button */
+            color: #fff; /* White text color on hover */
+        }
+        h1 {
+            margin-top: 0; /* Eliminate margin above the title */
+        }
+    </style>
 </head>
 <body>
+    <div class="header-section">
+        <button class="header-button" onclick="location.href='/about.html';">About</button>
+        <button class="header-button" onclick="location.href='/support.html';">SUPPORT US</button>
+    </div>
     <h1>THE MUSIC LEGENDS API</h1>
     <div class="group-container">
         {{range .}}
