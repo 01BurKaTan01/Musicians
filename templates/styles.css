@@ -64,17 +64,13 @@ h1::before {
     flex: 0 0 40%; /* This will make each item take up 40% of the container's width */
     max-width: 40%; /* This will make each item take up 40% of the container's width */
     margin: 3%; /* This will add a 3% margin around each item */
-    background-color: #252729; /* Koyu mavi arka plan */
-    box-shadow: 0 4px 8px #ea3521; /* Neon pembe gölge */
+    background-color: #252729; /* Dark blue background */
+    box-shadow: 0 4px 8px #ea3521; /* Neon pink shadow */
     border-radius: 8px;
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
     padding-bottom: 20px; /* Add padding at the bottom for the details */
 }
 
-.group-item:hover {
-    transform: translateY(-40px);
-}
 
 .group-item img {
     width: 45%;
@@ -85,6 +81,7 @@ h1::before {
 .group-info {
     width : 100%; /* Occupy full width */
     padding: 20px;
+    overflow-x: auto;
 }
 
 h2 {
