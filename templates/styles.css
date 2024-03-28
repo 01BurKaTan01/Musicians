@@ -52,7 +52,7 @@ h1::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #252729; /* Daha koyu mavi arka plan */
+    background-color: rgb(39, 43, 51); /* Daha koyu mavi arka plan */
     padding: 20px;
 }
 
@@ -64,8 +64,7 @@ h1::before {
     flex: 0 0 40%; /* This will make each item take up 40% of the container's width */
     max-width: 40%; /* This will make each item take up 40% of the container's width */
     margin: 3%; /* This will add a 3% margin around each item */
-    background-color: #252729; /* Dark blue background */
-    box-shadow: 0 4px 8px #ea3521; /* Neon pink shadow */
+    background-color: rgb(60, 62, 68); /* Dark blue background */
     border-radius: 8px;
     overflow: hidden;
     padding-bottom: 20px; /* Add padding at the bottom for the details */
@@ -75,7 +74,6 @@ h1::before {
 .group-item img {
     width: 45%;
     height: auto;
-    border-bottom: 2px solid #e74c3c; /* Neon kırmızı */
 }
 
 .group-info {
